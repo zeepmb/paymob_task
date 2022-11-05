@@ -1,0 +1,12 @@
+asgiref==3.5.2
+backports.zoneinfo==0.2.1;python_version<"3.9"
+Django==4.1.1
+djangorestframework==3.13.1
+numpy==1.23.3
+pandas==1.5.0
+python-dateutil==2.8.2
+pytz==2022.2.1
+six==1.16.0
+sqlparse==0.4.2
+django-core==1.4.1
+django-throttle-requests==0.6.0

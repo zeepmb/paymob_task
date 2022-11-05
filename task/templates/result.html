@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row margin">
+    <div class="col-md-2">
+        <div class="back-button back">
+        <a href={% url 'home' %}>
+            < Back</a>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <div class="table-container">
+            {% if filtered %}
+            <table id="table-style" style="width:100%">
+                <tr>
+                    <th>Key</th>
+                    <th>Values</th>
+                    <th>Matching Percentage</th>
+                </tr>
+                <tr>
+                    <td rowspan="100%">{{selected_key}}</td>
+                    <td>{{filtered.0.value}}</td>
+                    <td class="percentage-cell">{{filtered.0.percent}}%</td>
+                </tr>
+
+                {% for filter in filtered|slice:":-1" %}
+                <tr>
+                    <td>{{filter.value}}</td>
+                    <td class="percentage-cell">{{filter.percent}}%</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            <p>No Data is available available.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

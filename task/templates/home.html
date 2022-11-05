@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="filter-form">
+    <form action={% url 'result' %} method="post">
+        {% csrf_token %}
+    <div class="row margin">
+        <div class="col-md-10">
+        <select name="keys" id="keys" class="form-control select-key">
+            <option value="-1">Select Key</option>
+            {% for key in keys %}
+            <option value="{{key}}">{{key}}</option>
+            {% endfor %}
+        </select>
+            </div>
+        <div class="col-md-2">
+        <input type="submit" class="search-button" value="Search" name="btn-search" >
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

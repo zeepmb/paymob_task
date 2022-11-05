@@ -1,0 +1,94 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 7px;
+}
+
+.filter-form {
+  margin: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button {
+  background-color: #3b9dfa;
+  padding: 10px 30px;
+  color: white;
+  border: none;
+  border-radius: 22px;
+}
+
+.select-key {
+  padding: 4px;
+  margin-right: 10px;
+}
+
+.back-button {
+  margin: 10px 65px;
+}
+
+.table-container {
+  padding: 0px 5%;
+}
+
+.percentage-cell {
+  text-align: center;
+}
+
+.back a:link, .back a:visited {
+  background-color: #3b9dfa;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.task {
+  background-color: #3b9dfa;
+  color: white;
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 35px;
+}
+
+.margin{
+    margin-top: 75px;
+}
+
+#keys{
+    height: 100%;
+    border-radius: 28px;
+    background: #dce9f5;
+}
+
+
+#table-style {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+#table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+#table-style tr:hover {background-color: #ddd;}
+
+#table-style th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #3b9dfa;
+  color: white;
+  border-radius: 10px;
+}
