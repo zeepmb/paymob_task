@@ -6,7 +6,7 @@ def get_key_values():
     keys = []
     values = []
 
-    file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'task\data\dataset.csv')
+    file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'task/data/dataset.csv')
     df = pd.read_csv(file_path)
     df_keys = df.Key.dropna()
     df_values = df.Values.dropna()
